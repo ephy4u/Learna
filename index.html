@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learna</title>
+
+<!-- link for css -->
+<link rel="stylesheet" href="style.css">
+
+<!-- link for bootstrap -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+
+ <!-- for icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- for web icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<header>
+    <div class="conatainer-lg welcomepgh">
+
+        <!----------- Navbar starts here ------------------>
+
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse NaV" id="navbarTogglerDemo01">
+                    <a class=" fw-bolder mx-3 Nav" href="#">Learn<span class="spanx">a</span></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-4 ">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" href="lessons.html">Lessons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" href="signin/up.html">Sign in</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" onsubmit="goSearch(event)">
+                        <input id="searchInput"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button onclick="goSearch()" class="btn btn-outline-dark " type="submit">Search</button>
+
+                        <script>
+                            function goSearch(event) {
+                                event.preventDefault();
+
+                                let value =
+                                document.getElementById("searchInput").value;
+                              value = value.toLowerCase()
+                                        .replace(/\s+/g,"")
+                                        .replace(/-/g,"")
+                                        .replace(/_/g,"");
+
+                                const pages = { "getstarted":"getting started.html",
+                                                "home":"index.html","index":"index.html",
+                                                "aboutus":"about.html",
+                                                "about":"about.html","contact":"contact.html",
+                                                "contactus":"contact.html","lessons":"lessons.html",
+                                                "lesson":"lessons.html"
+                                };
+
+
+                                if(pages[value]){
+                                    window.location.href =pages[value];
+                                }
+                                else {
+                                    alert("page not found");
+                                }
+                            }
+
+
+                        </script>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-lg">
+        <div class="welcomepg">
+            <h2>Welcome to Learna <i class="bi bi-balloon"></i></h2>
+            <p>Learnz AI provides you with any educational support you may need it teaches and developes you to grow in various ways...</p>
+            <a class="btn getstartedb" href="getting started.html" role="button">Get Started</a>
+            <h2 class="text-warning">What do you wish to learn today <i class="bi bi-book"></i></h2>
+        </div>
+
+        <div class="file-container">
+            <div class="card">
+                <img src="images/software img.jpg " alt="" class="img-fluid">
+                <div class="p">
+                    <a href="softwaredevelopment.html" class="lessonlinks"><b>Software Development</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/forex img.jpg" alt="" class="img-fluid">
+                <div class="p">
+                    <a href="forextrading.html" class="lessonlinks"><b>Forex Trading</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/content img.jpg" alt="" class="img-fluid">
+                <div class="p">
+                    <a href="contentcreation.html" class="lessonlinks"><b>Content Creation</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="file-container">
+            <div class="card">
+                <img src="images/graphic design img.jpg" alt="" class="img-fluid">
+                <div class="p">
+                    <a href="graphicdesign.html" class="lessonlinks"><b>Graphic Designing</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/crypto img.jpg" alt="" class="img-fluid">
+                <div class="p">
+                    <a href="crypotrading.html" class="lessonlinks"><b>Crypto Trading</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/socialmm img.jpg" alt="" class="img-fluid">
+                <div class="p">
+                    <a href="socialmediamarketing.html" class="lessonlinks"><b>Social Media Marketing</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="file-container">
+            <div class="card">
+                <img src="images/publicspeaking img.jpg" alt="" class="img-fluid">
+                <div class="p">
+                    <a href="publicspeaking.html" class="lessonlinks"><b>Public Speaking</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/financialliteracy img.jpg" alt="" class="img-fluid">
+                <div class="p">
+                    <a href="financialliteracy.html" class="lessonlinks"><b>Financial Literacy</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/research writing img.jpg" alt="" class="img-fluid">
+                <div class="p">
+                    <a href="researchwriting.html" class="lessonlinks"><b>Research writing</b></a>
+                    <p>Estimated time: Varies</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<body>
+    
+</body>
+</html>
+
+<script src="js/bootstrap.bundle.min.js"></script>

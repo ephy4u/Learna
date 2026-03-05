@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getting started Learna</title>
+
+<!-- link for css -->
+<link rel="stylesheet" href="stylegs.css">
+
+<!-- link for bootstrap -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+
+ <!-- for icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<header>
+    <div class="conatainer-lg welcomepgh">
+
+        <!----------- Navbar starts here ------------------>
+
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse NaV" id="navbarTogglerDemo01">
+                    <a class=" fw-bolder mx-3 Nav" href="#">Learn<span class="spanx">a</span></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 mx-4 ">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" href="lessons.html">Lessons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light navv" href="signin/up.html">Sign in</a>
+                        </li>
+                    </ul>
+                     <form class="d-flex" role="search" onsubmit="goSearch(event)">
+                        <input id="searchInput"  class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button onclick="goSearch()" class="btn btn-outline-dark " type="submit">Search</button>
+
+                        <script>
+                            function goSearch(event) {
+                                event.preventDefault();
+
+                                let value =
+                                document.getElementById("searchInput").value;
+                                
+                               value = value.toLowerCase()
+                                        .replace(/\s+/g,"")
+                                        .replace(/-/g,"")
+                                        .replace(/_/g,"");
+
+                                const pages = {
+                                    "getstarted":"getting started.html",
+                                    "home":"index.html","index":"index.html",
+                                    "aboutus":"about.html",
+                                    "about":"about.html","contact":"contact.html",
+                                    "contactus":"contact.html","lessons":"lessons.html",
+                                    "lesson":"lessons.html"
+                                };
+
+                                if(pages[value]){
+                                    window.location.href =pages[value];
+                                }
+                                else {
+                                    alert("page not found");
+                                }
+                            }
+
+
+                        </script>
+
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+<body>
+        <div class="getting-startedpg">
+            <h2><b><span class="spanx text-warning">G</span>etting started with Learna</b> <i class="bi bi-boombox-fill"></i></h2>
+
+            <section class="welcome-section">
+                <h1>Welcome to learn<span class="spanxxx text-warning">a</span></h1>
+                <p>You're here to learn something new-and you're in the right place!
+                    Learna helps you discover online skills that can boost your career, your creativity, or just help you
+                    level up your knowledge.
+                </p>
+                <h2>Getting Sarted is easy</h2>
+                <p>Explore our tutorials, try hands-on exercises, and follow step-by-step guides.
+                    No account or warning is required-you can start learnfing right away!
+                </p>
+                <h2>What you can learn here</h2>
+                <ul>
+                    <li>Programming & Web development</li>
+                    <li>Digital Design & Creativity</li>
+                    <li>Productivity & Online Tools</li>
+                    <li>Marketing, Writing & More</li>
+                </ul>
+
+                <p>
+                    Ready to start? Just pick a skill from the menu above and dive in.
+                    Your learning journey starts today!
+                </p>
+
+                <p class="note">
+                    (psst...we're building more features, so soon you'll be able to track your progress!)
+                </p>
+            </section>
+
+        </div>
+       
+</body>
+</html>
+
+<script src="js/bootstrap.bundle.min.js"></script>

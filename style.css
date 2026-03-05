@@ -1,0 +1,151 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(images/welcompgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.file-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.file-container>.text {
+    flex: 1 1 300px;
+}
+
+.file-container>.img {
+    flex: 1 1 300px;
+}
+
+.img>img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section {
+    padding: 20px 10%;
+}
+
+.text h2 {
+    font-size: 25px;
+}
+
+.Nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+     font-size: 20px;
+    color: rgb(252, 221, 156);
+    text-decoration: none;
+}
+
+.navv {
+    color: white;
+    transition: 0.5s ease-out;
+}
+
+.navv:hover {
+    letter-spacing: 2px;
+    transition: 0.5s ease-out;
+}
+
+.spanx {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.spanxxx {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.NaV{
+    background-color: rgb(117, 0, 163);
+    background: -o-linear-gradient(top left, rgb(117, 0, 163), rgb(66, 66, 66), rgb(238, 201, 120));
+    background: -moz-linear-gradient(top left, rgb(117, 0, 163), rgb(66, 66, 66), rgb(238, 201, 120));
+    background: -webkit-linear-gradient(top left, rgb(117, 0, 163), rgb(66, 66, 66), rgb(238, 201, 120));
+    background: -ms-linear-gradient(top left, rgb(117, 0, 163), rgb(66, 66, 66), rgb(238, 201, 120));
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
+}
+
+.welcomepg {
+    text-align: center;
+    color: white;
+}
+
+.btn.getstartedb {
+    background-color: rgb(117, 0, 163);
+    color: white;
+    transition: 0.5s ease-out;
+}
+
+
+.btn.getstartedb:hover {
+    background-color: white;
+    color: rgb(117, 0, 163);
+    border-color: rgb(117, 0, 163);
+    transition: 0.5s ease-in;
+}
+
+.welcimg {
+    padding-top: 10px;
+}
+
+.p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card{
+flex: 1 1 200px;
+border: 2px solid rgb(117, 0, 163);
+border-radius: 4px;
+padding: 5px;
+margin-top: 20px;
+ box-shadow: 1px 8px 6px 5px grey;
+ text-align: center;
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+
+.card p {
+    line-height: 2;
+    }
+
+.lessonlinks {
+    margin-top: 15px;
+    color: rgb(117, 0, 163);
+    transition: 0.5s ease-out;
+    border-radius: 3px;
+    border-color: rgb(117, 0, 163);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.lessonlinks:hover {
+    margin-top: 15px;
+    color: rgb(117, 0, 163);
+    transition: 0.5s ease-in;
+    border-radius: 3px;
+    border-color: rgb(117, 0, 163);
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    font-weight: 400;
+}
+

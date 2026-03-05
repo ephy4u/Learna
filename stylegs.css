@@ -1,0 +1,90 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(images/getting\ started\ img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.file-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.file-container>.text {
+    flex: 1 1 300px;
+}
+
+.file-container>.img {
+    flex: 1 1 300px;
+}
+
+.img>img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section {
+    padding: 20px 10%;
+}
+
+.text h2 {
+    font-size: 25px;
+}
+
+.Nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+     font-size: 20px;
+    color: rgb(252, 221, 156);
+    text-decoration: none;
+}
+
+.navv {
+    color: white;
+    transition: 0.5s ease-out;
+}
+
+.navv:hover {
+    letter-spacing: 2px;
+    transition: 0.5s ease-out;
+}
+
+.spanx {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.spanxx {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.spanxxx {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.NaV{
+    background-color: rgb(117, 0, 163);
+    background: -o-linear-gradient(top left, rgb(117, 0, 163), rgb(66, 66, 66), rgb(238, 201, 120));
+    background: -moz-linear-gradient(top left, rgb(117, 0, 163), rgb(66, 66, 66), rgb(238, 201, 120));
+    background: -webkit-linear-gradient(top left, rgb(117, 0, 163), rgb(66, 66, 66), rgb(238, 201, 120));
+    background: -ms-linear-gradient(top left, rgb(117, 0, 163), rgb(66, 66, 66), rgb(238, 201, 120));
+    padding: 10px 10px 10px 10px;
+    border-radius: 7px;
+}
+
+.getting-startedpg {
+    text-align: center;
+    color: white;
+}
